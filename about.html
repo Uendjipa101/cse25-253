@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="icon" type="image/png" href="images/pesticide.png">
+    <title>Kanaandjoze Holdings | About Us</title>
+</head>
+<body>
+ <header>
+   <nav> 
+    <a href="index.html">
+        <img src="images/kanaandjoze_logo.svg" alt="Kanaandjoze logo" height="70">
+    </a>
+  <button id="hamburger">
+    <i class="fas fa-bars"></i>
+  </button>
+         <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+         </ul>
+            <button class="contact-btn"><a href="contact.html">Contact us Now</a></button>
+    </nav>
+ </header>  
+
+<section id="about-hero">
+    <h1>About Us</h1>
+    <p>Learn more about who we are and what drives us</p>
+    <div class="about-content">
+    <div class="about-slideshow">
+        <div class="about-slide active" style="background-image: url('images/about1.avif');"></div>
+        <div class="about-slide" style="background-image: url('images/about2.avif');"></div>
+    </div>
+     <div class="about-text">
+        <p>Kanaandjoze Holdings (Pty) Ltd is a 100% citizen owned fully registered company lead by highly qualified and trained professionals who are passionate about keeping your space clean and pest-free so you can live and work comfortably</p>
+    </div>
+
+
+
+</div>
+</section>
+
+<section id="who-we-are">
+    <h2>Who We are</h2>
+    <p>Kanaandjoze Holdings is a professional pest control and cleaning 
+  services company based in Botswana. Established in 2017, we have grown 
+  into a trusted name in pest management and cleaning solutions, serving 
+  both residential and commercial clients across the country.</p>
+
+    <p>We take pride in delivering high quality, reliable and affordable 
+  services that give our clients peace of mind. Whether it's eliminating 
+  pests or keeping your space spotless, our team is dedicated to getting 
+  the job done right every time.</p>
+
+</section>
+
+<section id="mission">
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide safe, effective and affordable pest control 
+  and cleaning services that protect the health and comfort of our clients. 
+  We are committed to using eco-friendly products and professional methods 
+  that deliver real results without harming people, pets or the environment.</p>
+
+</section>
+<section id="vision">
+  <h2>Our Vision</h2>
+  <p>To become the leading pest control and cleaning services company in 
+  Botswana, known for our professionalism, reliability and commitment to 
+  customer satisfaction.</p>
+</section>
+
+<section id="values">
+    <h2>Our Values</h2>
+
+    <div class="values-grid">
+        <div class="value-card">
+            <h4>Integrity</h4>
+            <p>We are honest and transparent in everything we do, from our pricing to the products we use</p>
+        </div>
+
+        <div class="value-card">
+            <h4>Professionalism</h4>
+            <p>Our team shows up on time, dressed properly and ready to deliver the best services possible</p>
+        </div>
+
+        <div class="value-card">
+            <h4>Customer First</h4>
+            <p>We listen to our clients and tailor our services to meet their specific needs and expectations</p>
+        </div>
+
+        <div class="value-card">
+            <h4>Safety</h4>
+            <p>We prioritize the safety of our clients, staff and the environment in every job we undertake</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="why-us-about">
+    <h2>Why Choose Kanaandjoze Holdings</h2>
+    <ul>
+     <li>Over 7 years of experience in the industry</li>
+     <li>Fully trained and professional team</li>
+     <li>Affordable and transparent pricing</li>
+     <li>Safe and eco-friendly products</li>
+     <li>Available for both residential and commercial clients</li>
+     <li>Reliable and punctual service</li>
+    </ul>
+
+</section>
+
+<section id="cta">
+    <h2>Ready to Work With Us?</h2>
+    <p>Contact us today and let us take care of your pest control and cleaning needs</p>
+    <button><a href="contact.html">Contact Us Now</a></button>
+
+</section>
+
+
+<!--Footer section-->
+<footer>
+<div class="footer-columns">
+    <div class="footer-box">
+        <a href="index.html">
+        <img src="images/kanaandjoze_logo.svg" alt="Kanaandjoze logo" height="100">
+    </a> 
+
+    </div>
+<div class="footer-box">
+<h4>Quick Links</h4>
+<ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="services.html">Services</a></li>
+     <li><a href="contact.html">Contact Us</a></li>
+     <li><a href="feedback.html">Feedback</a></li> 
+</ul>
+</div>
+
+<div class="footer-box">
+    <h4>Contact Information:</h4>
+    <ul>
+        <li>Phone Number: +267 71 658 161/ +267 71 626 963</li>
+        <li>Email: <a href="https://justice.muanange.kajuu@gmail.com" target="_blank">justice.muanange.kajuu@gmail.com</a></li>
+    </ul>
+
+</div>
+</div>
+
+
+<p>&copy 2026 Kanaandjoze Holdings. All Rights Reserved</p>
+</footer>
+
+<script>
+    const aboutSlides = document.querySelectorAll('.about-slide')
+    let aboutCurrent = 0;
+
+    setInterval(() => {
+        aboutSlides[aboutCurrent].classList.remove('active');
+        aboutCurrent = (aboutCurrent + 1) % aboutSlides.length;
+        aboutSlides[aboutCurrent].classList.add('active')
+    }, 4000);
+    const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    const icon = hamburger.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+  });
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate');
+        }
+    });
+  }, {threshold: 0.2});
+
+  document.querySelectorAll('.services-card, .quality-card, .value-card, .step-card').forEach(card => {
+    observer.observe(card);
+  });
+
+</script>
+
+
+
+</body>
+
+</html>
