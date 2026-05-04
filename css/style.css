@@ -1766,8 +1766,9 @@ body{
 
   /* HERO */
   #hero {
-    padding: 40px 10px;
     min-height: 100vh;
+    padding: 40px 10px;
+    
   }
 
   #hero h1 {
